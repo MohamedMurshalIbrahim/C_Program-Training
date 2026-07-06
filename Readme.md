@@ -9,7 +9,7 @@ This session covers the basics of C programming using a simple introductory prog
 - Practice formatted output using escape sequences like `\n`.
 
 ## Program: `main.c`
-**Location:** `Day 1 - 06 July/Session 1/main.c`
+**Location:** `Day1 - 06July/Session1/main.c`
 
 The program prints the following details:
 - Name
@@ -28,12 +28,23 @@ The program prints the following details:
 - `return 0;`
   - Indicates successful program execution.
 
-## How to Compile and Run (example)
-Using GCC (if available):
+## How to Compile and Run (MinGW)
+
+### 1) Open the correct folder
+Go to the folder containing `main.c` (for example):
+- `Day1 - 06July/Session1/`
+
+### 2) Compile
+Using GCC from MinGW:
 ```bash
-gcc main.c -o main
-./main
+gcc main.c -o main.exe
 ```
+
+### 3) Run
+```bash
+main.exe
+```
+
 
 ## Expected Output
 The program will display the user details in the console, each on a new line.
