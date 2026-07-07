@@ -140,54 +140,95 @@ You will practice:
 ### Program 1: Voting Eligibility Check (`mainD1S3-1.c`)
 **Location:** `Day1 - 06July/Session3/mainD1S3-1/mainD1S3-1.c`
 
-- Inputs:
+- Input:
   - Name (string)
   - Age (int)
-- Logic:
-  - If `age >= 18` -> eligible for voting, else not eligible.
+- Practice:
+  - Decision making using `if-else`
+- Output:
+  - Prints whether the person is eligible for voting (`age >= 18`).
 
 ### Program 2: Maximum of Three Numbers (`mainD1S3-2.c`)
 **Location:** `Day1 - 06July/Session3/mainD1S3-2/mainD1S3-2.c`
 
-- Inputs:
+- Input:
   - Name (string)
   - Number 1, Number 2, Number 3 (int)
-- Logic:
-  - Uses `if (a >= b && a >= c)` / `else if (b >= a && b >= c)` / `else` to print the maximum.
+- Practice:
+  - Comparing using `if / else if / else`
+- Output:
+  - Prints the maximum number among the three.
 
 ### Program 3: Area of Circle, Rectangle, Square (`mainD1S3-3.c`)
 **Location:** `Day1 - 06July/Session3/mainD1S3-3/mainD1S3-3.c`
 
-- Inputs:
+- Input:
   - Name (string)
   - Radius (float)
-  - Length & Breadth (float)
-  - Side (float)
-- Logic:
-  - Circle area: `PI * r * r` (uses `PI = 3.14`)
-  - Rectangle area: `length * breadth`
-  - Square area: `side * side`
+  - Rectangle length & breadth (float)
+  - Square side (float)
+- Practice:
+  - Using a constant `PI = 3.14`
+  - Performing arithmetic calculations with `float`
+- Output:
+  - Prints:
+    - Area of circle: `PI * r * r`
+    - Area of rectangle: `length * breadth`
+    - Area of square: `side * side`
 
 ### Program 4: Swap Two Numbers (Using Temporary Variable) (`mainD1S3-4.c`)
 **Location:** `Day1 - 06July/Session3/mainD1S3-4/mainD1S3-4.c`
 
-- Inputs:
+- Input:
   - Name (string)
   - Number 1, Number 2 (int)
-- Logic:
-  - Swap using `temp`.
+- Practice:
+  - Swapping using a temporary variable (`temp`).
+- Output:
+  - Prints Number 1 and Number 2 after swapping.
 
-### Program 5: Swap Two Numbers (Without Using Temporary Variable) (`mainD1S3-5.c`)
+### Program 5: Swap Two Numbers (Without Temporary Variable) (`mainD1S3-5.c`)
 **Location:** `Day1 - 06July/Session3/mainD1S3-5/mainD1S3-5.c`
 
-- Inputs:
+- Input:
   - Name (string)
   - Number 1, Number 2 (int)
-- Logic:
-  - Swapping using arithmetic method:
+- Practice:
+  - Swapping without `temp` using arithmetic:
     - `a = a + b`
     - `b = a - b`
     - `a = a - b`
+- Output:
+  - Prints the swapped values.
+
+## Practice Programs (Day 1 - Practice)
+
+### Practice 1: Leap Year Check (`practiceD1-1.c`)
+**Location:** `Day1 - 06July/Practice/PracticeD1-1/practiceD1-1.c`
+
+- Input: Year (int)
+- Logic:
+  - Leap year rules using nested `if` (`divisible by 4`, except `divisible by 100` unless also divisible by 400).
+- Output:
+  - Prints whether the given year is a leap year.
+
+### Practice 2: Swap Two Numbers using XOR (`practiceD1-2.c`)
+**Location:** `Day1 - 06July/Practice/PracticeD1-2/practiceD1-2.c`
+
+- Input: Name (string), Number 1 (int), Number 2 (int)
+- Logic:
+  - Swap using XOR operator (`^`).
+- Output:
+  - Prints swapped numbers.
+
+### Practice 3: Prime Number Check (`practiceD1-3.c`)
+**Location:** `Day1 - 06July/Practice/PracticeD1-3/practiceD1-3.c`
+
+- Input: Number (int)
+- Logic:
+  - Checks divisibility from `2` to `num/2` (sets `isPrime`).
+- Output:
+  - Prints whether the number is prime.
 
 ## How to Compile and Run (MinGW) - Generic
 Go to the folder of the required program (example):
