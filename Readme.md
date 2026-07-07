@@ -117,3 +117,90 @@ main.exe
   - Date of Birth
   - Address
 
+---
+
+# C Programming Training - Day 1 (06-July) | Session 3 (01.30PM - 04.20PM)
+
+## Overview
+This session covers decision making (using `if-else`) and basic arithmetic/geometry using user inputs.
+You will practice:
+- Reading strings with spaces using `scanf()`.
+- Taking multiple integer/float inputs.
+- Using conditional logic to find eligibility and maximum values.
+- Solving small problems like swapping numbers and area calculations.
+
+## Learning Objectives
+- Use `scanf(" %[^\\n]", name)` to read full names including spaces.
+- Perform arithmetic operations (swap numbers, compute areas).
+- Use `if` / `else if` / `else` for decision making.
+- Use constants (like `PI`) for geometry formulas.
+
+## Programs (Session 3)
+
+### Program 1: Voting Eligibility Check (`mainD1S3-1.c`)
+**Location:** `Day1 - 06July/Session3/mainD1S3-1/mainD1S3-1.c`
+
+- Inputs:
+  - Name (string)
+  - Age (int)
+- Logic:
+  - If `age >= 18` -> eligible for voting, else not eligible.
+
+### Program 2: Maximum of Three Numbers (`mainD1S3-2.c`)
+**Location:** `Day1 - 06July/Session3/mainD1S3-2/mainD1S3-2.c`
+
+- Inputs:
+  - Name (string)
+  - Number 1, Number 2, Number 3 (int)
+- Logic:
+  - Uses `if (a >= b && a >= c)` / `else if (b >= a && b >= c)` / `else` to print the maximum.
+
+### Program 3: Area of Circle, Rectangle, Square (`mainD1S3-3.c`)
+**Location:** `Day1 - 06July/Session3/mainD1S3-3/mainD1S3-3.c`
+
+- Inputs:
+  - Name (string)
+  - Radius (float)
+  - Length & Breadth (float)
+  - Side (float)
+- Logic:
+  - Circle area: `PI * r * r` (uses `PI = 3.14`)
+  - Rectangle area: `length * breadth`
+  - Square area: `side * side`
+
+### Program 4: Swap Two Numbers (Using Temporary Variable) (`mainD1S3-4.c`)
+**Location:** `Day1 - 06July/Session3/mainD1S3-4/mainD1S3-4.c`
+
+- Inputs:
+  - Name (string)
+  - Number 1, Number 2 (int)
+- Logic:
+  - Swap using `temp`.
+
+### Program 5: Swap Two Numbers (Without Using Temporary Variable) (`mainD1S3-5.c`)
+**Location:** `Day1 - 06July/Session3/mainD1S3-5/mainD1S3-5.c`
+
+- Inputs:
+  - Name (string)
+  - Number 1, Number 2 (int)
+- Logic:
+  - Swapping using arithmetic method:
+    - `a = a + b`
+    - `b = a - b`
+    - `a = a - b`
+
+## How to Compile and Run (MinGW) - Generic
+Go to the folder of the required program (example):
+- `Day1 - 06July/Session3/mainD1S3-5/`
+
+### 1) Compile
+```bash
+gcc mainD1S3-5.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+
