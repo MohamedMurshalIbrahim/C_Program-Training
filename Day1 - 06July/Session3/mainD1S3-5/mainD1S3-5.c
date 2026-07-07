@@ -1,5 +1,5 @@
 // C Program Training
-// Day 1(06-July) - Session 3(01.30PM to 03.00PM)
+// Day 1(06-July) - Session 3(01.30PM to 04.20PM)
 // Program 4
 // Swap two numbers entered by the user without using a temporary variable
 

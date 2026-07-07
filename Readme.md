@@ -244,4 +244,70 @@ gcc mainD1S3-5.c -o main.exe
 main.exe
 ```
 
+---
+
+# C Programming Training - Day 2 (07-July) | Session 1 (09.10AM - 10.50AM)
+
+## Overview
+This session covers multi-level decision making using `if-else` to:
+- Check whether the driver is eligible to apply for a driving licence.
+- Validate licence type (two-wheeler / four-wheeler / load vehicle / lorry).
+- Calculate traffic fines based on rule violations (helmet, seat belt, triples).
+
+## Learning Objectives
+- Use nested `if-else` statements to handle multiple conditions.
+- Take multiple inputs using `scanf()`.
+- Compute and accumulate a total fine based on violations.
+
+## Program: `mainD2S1-1.c`
+**Location:** `Day2 - 07July/Session1/mainD2S1-1/mainD2S1-1.c`
+
+## What the Program Does
+The program:
+1. Takes input from the user:
+   - Name (string)
+   - Driver age (int)
+   - Driving licence availability (1/0)
+2. If eligible, it further checks:
+   - Age eligibility for four-wheeler (`age >= 25`)
+   - Badge licence for load vehicle
+   - Heavy driving licence for lorry
+3. Then verifies traffic rules:
+   - Helmet not worn -> fine Rs. 200
+   - Seat belt not worn -> fine Rs. 500
+   - Triples riding -> fine Rs. 1000
+4. Prints the total fine.
+
+## Code Walkthrough (Key Logic)
+- Age eligibility:
+  - `if (age >= 18)`
+- Driving licence type checks:
+  - `if (licence == 1)` then
+    - `if (age >= 25)` for four-wheeler
+    - `badge == 1` for load vehicle
+    - `heavyLicence == 1` for lorry
+- Fine calculation:
+  - Adds fixed amount to `fine` when a rule is violated.
+
+## How to Compile and Run (MinGW)
+
+### 1) Open the correct folder
+- `Day2 - 07July/Session1/mainD2S1-1/`
+
+### 2) Compile
+```bash
+gcc mainD2S1-1.c -o main.exe
+```
+
+### 3) Run
+```bash
+main.exe
+```
+
+## Expected Output
+- Displays eligibility and licence permissions based on inputs.
+- Displays individual fines for helmet/seat belt/triples (only if violated).
+- Finally prints `Total Fine = Rs.<amount>`.
+
+
 
