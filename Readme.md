@@ -201,7 +201,7 @@ You will practice:
 - Output:
   - Prints the swapped values.
 
-## Practice Programs (Day 1 - Practice)
+# Practice Programs (Day 1 - Practice)
 
 ### Practice 1: Leap Year Check (`practiceD1-1.c`)
 **Location:** `Day1 - 06July/Practice/PracticeD1-1/practiceD1-1.c`
