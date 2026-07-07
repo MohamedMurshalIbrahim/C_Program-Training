@@ -309,5 +309,54 @@ main.exe
 - Displays individual fines for helmet/seat belt/triples (only if violated).
 - Finally prints `Total Fine = Rs.<amount>`.
 
+---
+
+# C Programming Training - Day 2 (07-July) | Session 2 (11.10AM - 12.50PM)
+
+## Overview
+This session focuses on using loops (`for` and `while`) to generate sequences and filter numbers using `if` conditions.
+
+You will practice:
+- Printing the first N numbers using a `for` loop.
+- Filtering even numbers using `if` inside a loop.
+- Printing the first 100 numbers using a `while` loop.
+- Filtering odd numbers from the generated sequence.
+
+## Learning Objectives
+- Use `for` loops for counting/fixed iteration.
+- Use `while` loops for repeated execution with a condition.
+- Use `if` conditions to print only required values (even/odd).
+
+## Programs (Session 2)
+
+### Program 1: Print First 11 Numbers & Even Numbers (`mainD2S2-1.c`)
+**Location:** `Day2 - 07July/Session2/mainD2S2-1/mainD2S2-1.c`
+
+- Practice:
+  - Prints first 11 whole numbers (from `0` to `10`) using a `for` loop.
+  - Prints only even numbers from the same range using `if (i % 2 == 0)`.
+
+### Program 2: Print First 100 Numbers & Odd Numbers (`mainD2S2-2.c`)
+**Location:** `Day2 - 07July/Session2/mainD2S2-2/mainD2S2-2.c`
+
+- Practice:
+  - Prints the first 100 numbers using a `while` loop.
+  - Prints only odd numbers from `1` to `100` using `if (i % 2 != 0)`.
+
+## How to Compile and Run (MinGW) - Generic
+Go to the folder of the required program (example):
+- `Day2 - 07July/Session2/mainD2S2-2/`
+
+### 1) Compile
+```bash
+gcc mainD2S2-2.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+
 
 
