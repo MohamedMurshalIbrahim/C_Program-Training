@@ -82,7 +82,7 @@ The program:
   - `char name[100];`
   - `char dob[20];`
   - `char address[200];`
-- `scanf(" %[^"]", name);`
+- `scanf(" %[^\"]", name);`
   - Reads the full name including spaces (until newline).
 - `scanf("%d", &age);`
   - Reads integer age.
@@ -357,6 +357,77 @@ gcc mainD2S2-2.c -o main.exe
 main.exe
 ```
 
+---
 
+# C Programming Training - Day 2 (07-July) | Session 3 (01.30PM - 04.20PM)
 
+## Overview
+This session focuses on loops and function usage.
+You will practice:
+- Using nested loops to print patterns.
+- Using `do-while` loops along with divisibility conditions.
+- Writing functions to compute areas and calling them from `main`.
+
+## Learning Objectives
+- Use `for` loops (including nested loops) for pattern printing.
+- Use `do-while` loops for condition-based repetition.
+- Use `if` conditions for filtering numbers (example: not divisible by 3).
+- Create and call functions for reusable calculations (circle/rectangle/square areas).
+
+## Programs (Session 3)
+
+### Program 1: Pattern Printing using Nested `for` loops (`mainD2S3-1.c`)
+**Location:** `Day2 - 07July/Session3/mainD2S3-1/mainD2S3-1.c`
+
+- Practice:
+  - Nested loops to print values of `i` and `j`.
+- Logic:
+  - Outer loop runs `i` from 0 to 4.
+  - Inner loop runs `j` from 0 to 4.
+- Output:
+  - Prints `i` and `j` pairs (each on a new line).
+
+### Program 2: Print Numbers Not Divisible by 3 using `do-while` (`mainD2S3-2.c`)
+**Location:** `Day2 - 07July/Session3/mainD2S3-2/mainD2S3-2.c`
+
+- Input:
+  - `num` (int)
+- Practice:
+  - `do-while` loop to iterate from 1 to `num`.
+  - `if (i % 3 != 0)` to filter numbers.
+- Output:
+  - Prints numbers from 1 to `num` that are not divisible by 3.
+
+### Program 3: Area Calculation using Functions (`mainD2S3-3.c`)
+**Location:** `Day2 - 07July/Session3/mainD2S3-3/mainD2S3-3.c`
+
+- Input:
+  - Radius (float)
+  - Rectangle length & width (float)
+  - Square side (float)
+- Practice:
+  - Functions:
+    - `areaOfCircle(radius)`
+    - `areaOfRectangle(length, width)`
+    - `areaOfSquare(side)`
+- Logic:
+  - Circle area = `3.14159 * r * r`
+  - Rectangle area = `length * width`
+  - Square area = `side * side`
+- Output:
+  - Prints the area of circle, rectangle, and square (each with 2 decimal places).
+
+## How to Compile and Run (MinGW) - Generic
+Go to the folder of the required program (example):
+- `Day2 - 07July/Session3/mainD2S3-2/`
+
+### 1) Compile
+```bash
+gcc mainD2S3-2.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
 
