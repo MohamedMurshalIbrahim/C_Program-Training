@@ -431,3 +431,121 @@ gcc mainD2S3-2.c -o main.exe
 main.exe
 ```
 
+---
+
+# C Programming Training - Day 3 (08-July) | Session 1 (01.30PM - 03.00PM)
+
+## Overview
+This session covers arrays and basic algorithmic thinking using:
+- Integer and string arrays
+- Accessing elements by index with validation
+- Palindrome checking using digit reversal.
+
+## Learning Objectives
+- Create integer arrays and 2D character arrays for strings.
+- Read array elements from the user.
+- Access and print array values using a user-provided index (with range checking).
+- Use a loop to reverse digits and check whether a number is a palindrome.
+
+## Programs (Session 1)
+
+### Program 1: Access and Display Integer and String Array Elements by Index (`mainD3S1-1.c`)
+**Location:** `Day3 - 08July/Session1/mainD3S1-1/mainD3S1-1.c`
+
+**What the Program Does**
+- Takes 5 integers into `int num[5]`.
+- Takes 5 words into `char arr[5][50]`.
+- Takes an index input from the user.
+- If the index is valid (`0` to `4`), prints:
+  - the integer at that index
+  - the string at that index
+- Otherwise, prints an invalid index message.
+
+**Key Concepts in Code**
+- Integer array storage: `num[i]`
+- String array storage (2D char array): `arr[i]`
+- Index validation:
+  - `if (index >= 0 && index < 5)`
+
+### Program 2: Palindrome Check for a Given Number (`mainD3S1-2.c`)
+**Location:** `Day3 - 08July/Session1/mainD3S1-2/mainD3S1-2.c`
+
+**What the Program Does**
+- Takes an integer `num` from the user.
+- Reverses the digits using a `while` loop.
+- Compares `originalNum` with `reversedNum`.
+- Prints whether the number is a palindrome.
+
+**Key Concepts in Code**
+- Digit extraction:
+  - `remainder = num % 10`
+- Build reversed number:
+  - `reversedNum = reversedNum * 10 + remainder`
+- Remove last digit:
+  - `num /= 10`
+
+---
+
+## How to Compile and Run (MinGW) - Generic
+Go to the folder of the required program (example):
+- `Day3 - 08July/Session1/mainD3S1-1/`
+
+### 1) Compile
+```bash
+gcc mainD3S1-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 3 (08-July) | Session 2 (03.10PM - 04.20PM)
+
+## Overview
+This session covers recursion by computing factorial.
+You will practice:
+- Writing a recursive function.
+- Handling base cases to stop recursion.
+- Calling the recursive function from `main`.
+
+## Learning Objectives
+- Implement recursion using a function call inside a function.
+- Understand base conditions (`n == 0` and `n == 1`).
+- Use input validation for negative numbers.
+
+## Program 1: Factorial using Recursion (`mainD3S2-1.c`)
+**Location:** `Day3 - 08July/Session2/mainD3S2-1.c`
+
+## What the Program Does
+- Takes a positive integer `num` from the user.
+- Uses recursion to compute `factorial(num)`.
+- If the input is negative, prints that factorial is not defined for negative numbers.
+- Prints the final result as `Factorial of <num> = <value>`.
+
+## Code Walkthrough
+- Recursive function: `factorial_recursive(int n)`
+  - **Base case:** if `n == 0 || n == 1`, return `1`.
+  - **Recursive case:** return `n * factorial_recursive(n - 1)`.
+- Input and validation in `main()`
+  - Reads `num` using `scanf("%d", &num)`.
+  - Checks `if (num < 0)` before calling recursion.
+
+## How to Compile and Run (MinGW)
+
+Go to the folder containing `mainD3S2-1.c`:
+- `Day3 - 08July/Session2/`
+
+### 1) Compile
+```bash
+gcc mainD3S2-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+

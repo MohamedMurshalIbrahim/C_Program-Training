@@ -1,7 +1,7 @@
 // C Program Training
 // Day 2(07-July) - Session 3(01.30PM to 04.20PM)
 // Program 1
-// Inifinite loop using for loop
+// Infinite loop using for loop
 
 #include <stdio.h> // Header file for input and output functions
 
