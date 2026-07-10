@@ -1,5 +1,5 @@
 // C Program Training
-// Day 3(08-July) - Assessment
+// Day 3(08-July) - Assessment(Conducted on Day4(09-July) - (11.10AM to 12.50PM))
 // Program 1
 // Finding the Longest Non-Repeating Character Substring in C
 

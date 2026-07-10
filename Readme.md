@@ -551,7 +551,7 @@ main.exe
 ```
 ---
 
-# C Programming Training - Day 3 (08-July) | Assessment
+# C Programming Training - Day 3 (08-July) | Assessment(Conducted on Day4(10-July) - (11.10AM to 12.50PM))
 
 ## Overview
 This assessment includes advanced array/string logic problems.
@@ -682,6 +682,7 @@ main.exe
 # C Programming Training - Day 4 (09-July) | Session 3 (03.10PM - 04.20PM)
 
 ## Overview
+
 This session focuses on Floyd’s triangle variations using number patterns.
 
 ## Learning Objectives
@@ -731,3 +732,43 @@ gcc mainD4S3-1.c -o main.exe
 ```bash
 main.exe
 ```
+
+---
+
+# C Programming Training - Day 4 (09-July) | Assessment (Conducted on Day5(10-July) - (09.10AM to 10.50AM))
+
+## Overview
+This assessment creates **Pascal’s triangle** style output using **asterisks** for **5 rows**.
+
+## Learning Objectives
+- Use nested `for` loops to print a structured triangle pattern.
+- Control spacing and number of symbols for each row.
+
+## Program: Pascal’s Triangle with 5 Rows using Asterisks
+**File:** `assD4-1.c`
+**Location:** `Day4 - 09July/Assessment/assD4-1.c`
+
+## What the Program Does
+- Prints a formatted triangle for `rows = 5`.
+- For every row `i`:
+  - Prints leading spaces (`rows - i - 1`) for alignment.
+  - Prints `i + 1` asterisks (`*`).
+
+## Output
+- The program displays Pascal’s triangle shaped output using `*` symbols.
+
+## How to Compile and Run (MinGW)
+Go to the assessment folder:
+- `Day4 - 09July/Assessment/`
+
+### 1) Compile
+```bash
+gcc assD4-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+
