@@ -738,15 +738,15 @@ main.exe
 # C Programming Training - Day 4 (09-July) | Assessment (Conducted on Day5(10-July) - (09.10AM to 10.50AM))
 
 ## Overview
-This assessment creates **Pascal’s triangle** style output using **asterisks** for **5 rows**.
+This assessment contains Pascal’s triangle style pattern programs using **asterisks**.
 
 ## Learning Objectives
-- Use nested `for` loops to print a structured triangle pattern.
+- Use nested `for` loops to print triangle patterns.
 - Control spacing and number of symbols for each row.
 
-## Program: Pascal’s Triangle with 5 Rows using Asterisks
+## Program 1: Pascal’s Triangle with 5 Rows using Asterisks (centered)
 **File:** `assD4-1.c`
-**Location:** `Day4 - 09July/Assessment/assD4-1.c`
+**Location:** `Day4 - 09July/Assessment/assD4-1/assD4-1.c`
 
 ## What the Program Does
 - Prints a formatted triangle for `rows = 5`.
@@ -757,9 +757,21 @@ This assessment creates **Pascal’s triangle** style output using **asterisks**
 ## Output
 - The program displays Pascal’s triangle shaped output using `*` symbols.
 
+## Program 2: Pascal’s Triangle with 5 Rows using Asterisks (right angle)
+**File:** `assD4-2.c`
+**Location:** `Day4 - 09July/Assessment/assD4-2/assD4-2.c`
+
+## What the Program Does
+- Prints Pascal’s triangle for `rows = 5`.
+- Uses only nested loops without leading spaces:
+  - For each row `i` (1 to rows), prints `i` asterisks.
+
+## Output
+- The program displays a right-angle Pascal’s triangle using `*` symbols.
+
 ## How to Compile and Run (MinGW)
-Go to the assessment folder:
-- `Day4 - 09July/Assessment/`
+Go to the folder:
+- `Day4 - 09July/Assessment/assD4-1`
 
 ### 1) Compile
 ```bash
