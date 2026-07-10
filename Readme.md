@@ -246,6 +246,8 @@ main.exe
 
 ---
 
+---
+
 # C Programming Training - Day 2 (07-July) | Session 1 (09.10AM - 10.50AM)
 
 ## Overview
@@ -547,5 +549,185 @@ gcc mainD3S2-1.c -o main.exe
 ```bash
 main.exe
 ```
+---
 
+# C Programming Training - Day 3 (08-July) | Assessment
 
+## Overview
+This assessment includes advanced array/string logic problems.
+
+## Programs (Assessment)
+
+### Program 1: Longest Non-Repeating Character Substring
+**File:** `assD3-1.c`
+**Location:** `Day3 - 08July/Assessment/AssD3-1/assD3-1.c`
+
+- Finds the length of the longest substring without repeating characters.
+- Uses an index tracking array `lastIndex[256]` and a moving window.
+
+### Program 2: Product of Array Except Self
+**File:** `assD2-2.c`
+**Location:** `Day3 - 08July/Assessment/AssD3-2/assD2-2.c`
+
+- For each element, computes product of all other elements.
+- Uses prefix products (`left[]`) and suffix products (`right[]`).
+
+### Program 3: Minimum Window Substring (Sliding Window)
+**File:** `assD3-3.c`
+**Location:** `Day3 - 08July/Assessment/AssD3-3/assD3-3.c`
+
+- Finds the smallest window in `s` that contains all characters of `t`.
+- Uses a frequency array (`freq[256]`) and shrinks the window when a valid match is found.
+
+## How to Compile and Run (MinGW) - Generic
+Go to the assessment folder and run:
+
+### 1) Compile
+```bash
+gcc <file>.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 4 (09-July) | Session 1 (09.10AM - 10.50AM)
+
+## Overview
+This session focuses on loops to generate repetitive arithmetic output.
+
+## Learning Objectives
+- Use `for` loops for fixed iteration.
+- Print formatted multiplication results.
+
+## Program: 2nd Multiplication Table from 1 to 20
+**File:** `mainD4S1-1.c`
+**Location:** `Day4 - 09July/Session1/mainD4S1-1.c`
+
+- Prints `i x 2` for `i` from 1 to 20.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day4 - 09July/Session1/`
+
+### 1) Compile
+```bash
+gcc mainD4S1-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 4 (09-July) | Session 2 (01.30PM - 03.00PM)
+
+## Overview
+This session covers loop-based pattern printing (squares and Floyd’s triangle).
+
+## Learning Objectives
+- Use nested loops for rows and columns.
+- Use `if` conditions to draw outline patterns.
+
+## Programs (Session 2)
+
+### Program 1: Outline 5×5 Square using Asterisks
+**File:** `mainD4S2-1.c`
+**Location:** `Day4 - 09July/Session2/mainD4S2-1/mainD4S2-1.c`
+
+- Draws an outline square.
+- Prints `*` only on the border positions.
+
+### Program 2: Filled 5×5 Square using Asterisks
+**File:** `mainD4S2-2.c`
+**Location:** `Day4 - 09July/Session2/mainD4S2-2/mainD4S2-2.c`
+
+- Draws a filled square using nested loops.
+
+### Program 3: 5×5 Number Grid (1 to 25)
+**File:** `mainD4S2-3.c`
+**Location:** `Day4 - 09July/Session2/mainD4S2-3/mainD4S2-3.c`
+
+- Prints values in a 5×5 grid.
+- Uses: `i*5 + j + 1`.
+
+### Program 4: Floyd's Triangle with 5 Rows using Asterisks
+**File:** `mainD4S2-4.c`
+**Location:** `Day4 - 09July/Session2/mainD4S2-4/mainD4S2-4.c`
+
+- Prints Floyd’s triangle using `*`.
+- For row `i`, prints `i` stars.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day4 - 09July/Session2/`
+
+### 1) Compile
+```bash
+gcc mainD4S2-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 4 (09-July) | Session 3 (03.10PM - 04.20PM)
+
+## Overview
+This session focuses on Floyd’s triangle variations using number patterns.
+
+## Learning Objectives
+- Use nested loops to print triangle patterns.
+- Change loop direction/counters to generate variations.
+
+## Programs (Session 3)
+
+### Program 1: Floyd's Triangle with Numbers (Top-Down)
+**File:** `mainD4S3-1.c`
+**Location:** `Day4 - 09July/Session3/mainD4S3-1/mainD4S3-1.c`
+
+- Prints 5 rows Floyd’s triangle with increasing numbers.
+
+### Program 2: Floyd's Triangle with Numbers (Inverse order)
+**File:** `mainD4S3-2.c`
+**Location:** `Day4 - 09July/Session3/mainD4S3-2/mainD4S3-2.c`
+
+- Prints triangle using reverse outer loop order (`i` from 5 down to 1).
+
+### Program 3: Floyd's Triangle (Descending/variation output)
+**File:** `mainD4S3-3.c`
+**Location:** `Day4 - 09July/Session3/mainD4S3-3/mainD4S3-3.c`
+
+**What the Program Does**
+- Creates a Floyd’s triangle pattern using numbers.
+- Prints rows in a descending style (outer loop decreases), and prints the row values.
+
+**Key Concepts**
+- Uses nested loops:
+  - Outer loop controls the row size (runs from 5 down to 1).
+  - Inner loop prints the numbers for that row.
+
+**Output**
+- Displays the Floyd-style triangle for 5 rows.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day4 - 09July/Session3/`
+
+### 1) Compile
+```bash
+gcc mainD4S3-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
