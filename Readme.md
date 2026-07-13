@@ -934,3 +934,254 @@ gcc mainD5S3-1.c -o main.exe
 main.exe
 ```
 
+---
+
+---
+
+# C Programming Training - Day 6 (13-July) | Session 1 (09.10AM - 10.50AM)
+
+## Overview
+This session introduces **1-D array basics**: reading an array size from the user, taking elements into the array, and displaying the same elements.
+
+## Learning Objectives
+- Declare and use a one-dimensional array (`int arr[]`).
+- Read `n` (array size) and then read `n` elements using a loop.
+- Display all stored array elements using another loop.
+
+## Program 1: Reading and Displaying Array Elements (`mainD6S1-1.c`)
+**Location:** `Day06 - 13July/Session1/mainD6S1-1.c`
+
+
+## What the Program Does
+The program:
+1. Prints a training/welcome message.
+2. Asks the user for the number of elements `n`.
+3. Reads `n` integer values into `arr[i]`.
+4. Displays the stored array elements.
+
+## Code Walkthrough
+- Array declaration:
+  - `int arr[100];`
+- Input for size:
+  - `scanf("%d", &n);`
+- Read array elements (loop):
+  - `for(i = 0; i < n; i++) { scanf("%d", &arr[i]); }`
+- Display array elements (loop):
+  - `for(i = 0; i < n; i++) { printf("%d ", arr[i]); }`
+
+## How to Compile and Run (MinGW)
+Go to the folder containing `mainD6S1-1.c`:
+- `Day6 - 13July/Session1/`
+
+### 1) Compile
+```bash
+gcc mainD6S1-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+## Expected Output (Behavior)
+- Prompts for number of elements.
+- Prompts for each element and stores them.
+- Prints the array elements in the same order entered.
+
+---
+
+# C Programming Training - Day 6 (13-July) | Session 2 (11.10AM - 12.50PM)
+
+## Overview
+This session covers **2-D array operations**: reading arrays from the user, computing the sum of elements, and adding two matrices.
+
+## Learning Objectives
+- Use 1-D and 2-D array concepts to store user input.
+- Read a 2-D array using nested loops.
+- Compute the **sum** of array elements.
+- Add **two 2-D matrices** and display the resulting matrix.
+
+## Programs (Session 2)
+
+### Program 1: Sum of One-Dimensional Array Elements (`mainD6S2-1.c`)
+**Location:** `Day6 - 13July/Session2/mainD6S2-1/mainD6S2-1.c`
+
+## What the Program Does
+The program:
+- Takes `n` (number of elements).
+- Reads `n` integers into `arr[i]`.
+- Calculates the sum of all elements and prints it.
+
+## Code Walkthrough
+- Array declaration:
+  - `int arr[100];`
+- Input size:
+  - `scanf("%d", &n);`
+- Read elements + sum:
+  - `sum = sum + arr[i];`
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day6 - 13July/Session2/mainD6S2-1/`
+
+### 1) Compile
+```bash
+gcc mainD6S2-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+### Program 2: Reading a Two-Dimensional Array (`mainD6S2-2.c`)
+**Location:** `Day6 - 13July/Session2/mainD6S2-2/mainD6S2-2.c`
+
+## What the Program Does
+The program:
+- Takes `rows` and `cols`.
+- Reads elements into `arr[rows][cols]` using nested loops.
+- Prints the stored 2-D array.
+
+## Code Walkthrough
+- Declaration:
+  - `int arr[10][10];`
+- Nested input loops:
+  - `for(i=0;i<rows;i++) for(j=0;j<cols;j++) scanf(...)`
+- Nested output loops:
+  - `printf("%d\t", arr[i][j]);`
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day06 - 13July/Session2/mainD6S2-2/`
+
+### 1) Compile
+```bash
+gcc mainD6S2-2.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+### Program 3: Add Two Two-Dimensional Arrays (Matrices) (`mainD6S2-3.c`)
+**Location:** `Day6 - 13July/Session2/mainD6S2-3/mainD6S2-3.c`
+
+## What the Program Does
+The program:
+- Takes `rows` and `cols`.
+- Reads **Matrix A** into `arr1`.
+- Reads **Matrix B** into `arr2`.
+- Computes `sum[i][j] = arr1[i][j] + arr2[i][j]`.
+- Prints Matrix A, Matrix B, and the Sum Matrix.
+
+## Code Walkthrough
+- Matrices:
+  - `int arr1[10][10], arr2[10][10], sum[10][10];`
+- Matrix addition:
+  - `sum[i][j] = arr1[i][j] + arr2[i][j];`
+- Display:
+  - Prints each matrix using nested loops.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day6 - 13July/Session2/mainD6S2-3/`
+
+### 1) Compile
+```bash
+gcc mainD6S2-3.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 6 (13-July) | Session 3 (01.30PM to 03.00PM)
+
+## Overview
+This session covers **1-D array manipulation** and using arrays to solve common tasks.
+
+You will practice:
+- Reversing a one-dimensional array.
+- Displaying memory addresses of array elements.
+- Finding the **2nd largest** and **2nd smallest** number in an array.
+
+## Learning Objectives
+- Use loops to traverse and rearrange array elements.
+- Understand pointer/address representation using `&arr[i]`.
+- Apply sorting/iteration logic to find the second smallest and second largest values.
+
+## Programs (Session 3)
+
+### Program 1: Reverse a One-Dimensional Array (`mainD6S3-1.c`)
+**Location:** `Day6 - 13July/Session3/mainD6S3-1/mainD6S3-1.c`
+
+## What the Program Does
+- Takes `n` (number of elements).
+- Reads `n` integers into an array.
+- Prints the original array.
+- Reverses the array using swaps.
+- Prints the reversed array.
+
+## Key Logic
+- Swap elements from both ends:
+  - `arr[i]` with `arr[n-1-i]`
+- Loop runs for `i = 0` to `n/2 - 1`.
+
+### Program 2: Display Memory Address of Array Elements (`mainD6S3-2.c`)
+**Location:** `Day6 - 13July/Session3/mainD6S3-2/mainD6S3-2.c`
+
+## What the Program Does
+- Initializes an array: `int arr[5] = {10, 20, 30, 40, 50};`
+- For each element `arr[i]`, prints:
+  - its value
+  - its memory address using `&arr[i]`
+
+## Code Highlight
+- `printf("Value = %d Address = %p\n", arr[i], (void *)&arr[i]);`
+
+### Program 3: Find the Second Largest and Second Smallest in an Array (`mainD6S3-3.c`)
+**Location:** `Day6 - 13July/Session3/mainD6S3-3/mainD6S3-3.c`
+
+## What the Program Does
+- Takes `n` and reads `n` integers into an array.
+- Sorts the array in ascending order (bubble sort).
+- Finds the second smallest and second largest values:
+  - Uses `continue` and `break` to skip duplicates.
+- Handles cases where the second smallest/largest does not exist.
+
+## Key Logic
+- Sort (ascending):
+  - swap if `arr[j] > arr[j+1]`
+- Second smallest:
+  - scan from start, skipping duplicates of the smallest.
+- Second largest:
+  - scan from end, skipping duplicates of the largest.
+
+## How to Compile and Run (MinGW) - Generic
+Go to the folder of the required program (example):
+- `Day6 - 13July/Session3/mainD6S3-1/`
+
+### 1) Compile
+```bash
+gcc mainD6S3-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+
+
+
+
+

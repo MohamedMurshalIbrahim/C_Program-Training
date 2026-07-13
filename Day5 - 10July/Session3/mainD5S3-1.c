@@ -20,6 +20,7 @@ int main() {
 
     int num, i;
 
+    //print program details
     printf("C Program Training\n");
     printf("Day 5 - Session 2\n");
     printf("Title: Generate the Fibonacci series using recursion\n");
