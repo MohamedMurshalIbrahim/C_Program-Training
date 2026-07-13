@@ -529,14 +529,13 @@ You will practice:
 
 ## Code Walkthrough
 - Recursive function: `factorial_recursive(int n)`
-  - **Base case:** if `n == 0 || n == 1`, return `1`.
-  - **Recursive case:** return `n * factorial_recursive(n - 1)`.
+  - Base case: if `n == 0 || n == 1`, return `1`.
+  - Recursive case: return `n * factorial_recursive(n - 1)`.
 - Input and validation in `main()`
   - Reads `num` using `scanf("%d", &num)`.
   - Checks `if (num < 0)` before calling recursion.
 
 ## How to Compile and Run (MinGW)
-
 Go to the folder containing `mainD3S2-1.c`:
 - `Day3 - 08July/Session2/`
 
@@ -549,6 +548,7 @@ gcc mainD3S2-1.c -o main.exe
 ```bash
 main.exe
 ```
+
 ---
 
 # C Programming Training - Day 3 (08-July) | Assessment(Conducted on Day4(10-July) - (11.10AM to 12.50PM))
@@ -682,7 +682,6 @@ main.exe
 # C Programming Training - Day 4 (09-July) | Session 3 (03.10PM - 04.20PM)
 
 ## Overview
-
 This session focuses on Floyd’s triangle variations using number patterns.
 
 ## Learning Objectives
@@ -707,17 +706,8 @@ This session focuses on Floyd’s triangle variations using number patterns.
 **File:** `mainD4S3-3.c`
 **Location:** `Day4 - 09July/Session3/mainD4S3-3/mainD4S3-3.c`
 
-**What the Program Does**
 - Creates a Floyd’s triangle pattern using numbers.
 - Prints rows in a descending style (outer loop decreases), and prints the row values.
-
-**Key Concepts**
-- Uses nested loops:
-  - Outer loop controls the row size (runs from 5 down to 1).
-  - Inner loop prints the numbers for that row.
-
-**Output**
-- Displays the Floyd-style triangle for 5 rows.
 
 ## How to Compile and Run (MinGW)
 Go to the folder:
@@ -748,26 +738,18 @@ This assessment contains Pascal’s triangle style pattern programs using **aste
 **File:** `assD4-1.c`
 **Location:** `Day4 - 09July/Assessment/assD4-1/assD4-1.c`
 
-## What the Program Does
 - Prints a formatted triangle for `rows = 5`.
 - For every row `i`:
   - Prints leading spaces (`rows - i - 1`) for alignment.
   - Prints `i + 1` asterisks (`*`).
 
-## Output
-- The program displays Pascal’s triangle shaped output using `*` symbols.
-
 ## Program 2: Pascal’s Triangle with 5 Rows using Asterisks (right angle)
 **File:** `assD4-2.c`
 **Location:** `Day4 - 09July/Assessment/assD4-2/assD4-2.c`
 
-## What the Program Does
 - Prints Pascal’s triangle for `rows = 5`.
 - Uses only nested loops without leading spaces:
   - For each row `i` (1 to rows), prints `i` asterisks.
-
-## Output
-- The program displays a right-angle Pascal’s triangle using `*` symbols.
 
 ## How to Compile and Run (MinGW)
 Go to the folder:
@@ -783,4 +765,172 @@ gcc assD4-1.c -o main.exe
 main.exe
 ```
 
+---
+
+# C Programming Training - Day 5 (10-July) | Session 1 (09.10AM to 10.50AM)
+
+## Overview
+This session introduces **pass-by-value** in C using a function. It demonstrates how changes inside a function do **not** affect the original variable passed from `main`.
+
+## Learning Objectives
+- Understand pass-by-value parameter behavior in C.
+- Use functions to modify local copies of variables.
+- Compare the value before and after calling a function.
+
+## Program 1: Working of pass by value in C programming language (`mainD5S1-1.c`)
+**Location:** `Day5 - 10July/Session1/mainD5S1-1.c`
+
+## What the Program Does
+- Declares an integer `number = 5` in `main`.
+- Calls `passByValue(number)`.
+- Inside `passByValue`:
+  - increments the local copy of `num` by `10`.
+  - prints the modified value inside the function.
+- Back in `main`:
+  - prints `number` again to show it remains unchanged (because C passes arguments by value).
+
+## Output (Behavior)
+- You will see:
+  - value **before** calling the function in `main`
+  - value **inside** the function (after adding 10)
+  - value **after** calling the function in `main` (same as before)
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day5 - 10July/Session1/`
+
+### 1) Compile
+```bash
+gcc mainD5S1-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+# C Programming Training - Day 5 (10-July) | Session 2 (11.10AM to 12.50PM)
+
+## Overview
+This session introduces **pass by reference** in C using pointers.
+
+## Overview (pass by reference)
+In C, when you pass an address (pointer) to a function, the function can modify the original variable (unlike pass-by-value). 
+
+
+## Learning Objectives
+- Understand **pass-by-reference** in C using pointers.
+- Write a function that can modify the original variable passed from `main`.
+- Observe changes (value and address) before and after the function call.
+
+## Program 1: Pass by Reference using Pointers (`mainD5S2-1.c`)
+**Location:** `Day5 - 10July/Session2/mainD5S2-1/mainD5S2-1.c`
+
+## What the Program Does
+- Declares an integer `x = 50` in `main`.
+- Prints the **value of `x`** and the **address of `x`**.
+- Calls `updateValue(&x)` where:
+  - `updateValue(int *y)` receives the address of `x`.
+  - prints the address stored in `y` and the current value at `y`.
+  - updates `*y = *y + 10`.
+- Prints the updated value of `x` back in `main`.
+
+## Output (Behavior)
+- You will see `x` value before the function call.
+- Inside the function, you will see the address and value at `y`.
+- After returning, `x` is increased by `10`.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day5 - 10July/Session2/mainD5S2-1/`
+
+### 1) Compile
+```bash
+gcc mainD5S2-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
+
+---
+
+## Program 2: Factorial using Recursion (`mainD5S2-2.c`)
+**Location:** `Day5 - 10July/Session2/mainD5S2-2/mainD5S2-2.c`
+
+### What the Program Does
+- Takes a positive integer `num` from the user.
+- Computes `num!` (factorial) using a **recursive function**.
+- If the input is negative (`num < 0`), prints that factorial is not defined for negative numbers.
+
+### Code Walkthrough
+- Recursive function: `factorial_recursive(int n)`
+  - Base case: if `n == 0` or `n == 1`, returns `1`.
+  - Recursive case: returns `n * factorial_recursive(n - 1)`.
+- In `main()`
+  - Reads `num` using `scanf()`.
+  - Calls `factorial_recursive(num)`.
+  - Prints `Factorial of <num> = <value>`.
+
+### How to Compile and Run (MinGW)
+Go to the folder:
+- `Day5 - 10July/Session2/mainD5S2-2/`
+
+#### 1) Compile
+```bash
+gcc mainD5S2-2.c -o main.exe
+```
+
+#### 2) Run
+```bash
+main.exe
+```
+
+### Expected Output (Behavior)
+- Prompts for a positive integer.
+- Displays the factorial result.
+- For negative input, displays:
+  - `Factorial is not defined for negative numbers.`
+
+---
+
+# C Programming Training - Day 5 (10-July) | Session 3 (01.30PM to 03.00PM)
+
+## Overview
+This session covers **Fibonacci Series using functions**.
+
+## Learning Objectives
+- Write recursive/functional logic to generate Fibonacci numbers.
+- Print Fibonacci series for the given number of terms.
+
+
+
+## Learning Objectives
+- Practice generating Fibonacci series with a different function/loop approach.
+- Read `n` from the user and print the Fibonacci terms.
+
+## Program 1: Fibonacci Series Variation using Functions (`mainD5S3-1.c`)
+**Location:** `Day5 - 10July/Session3/mainD5S3-1.c`
+
+## What the Program Does
+- Takes input `n`.
+- Uses a function and/or loop logic to compute the Fibonacci numbers.
+- Prints the series for `n` terms.
+
+## How to Compile and Run (MinGW)
+Go to the folder:
+- `Day5 - 10July/Session3/`
+
+### 1) Compile
+```bash
+gcc mainD5S3-1.c -o main.exe
+```
+
+### 2) Run
+```bash
+main.exe
+```
 
